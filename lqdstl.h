@@ -7,13 +7,15 @@
 
 #ifndef LQDSTL_H_
 #define LQDSTL_H_
-#include<iostream>
+#include"tools.h"
 #include"lqdallocator.h"
-using namespace std;
+#include"lqdvector.h"
 void testallcator() {
-	lqdallocator la;
-	int* ptr = NULL;
-	la.allcat(sizeof(int), (void**) &ptr);
-	cout << ptr;
+}
+void testconstruct() {
+	lqdvector<int>* ptr = NULL, v(3);
+	lqdallocator::allocate(100, (void**) &ptr);
+	cout << ptr << endl;
+	lqdconstruct(ptr, lqdvector<int> (3));
 }
 #endif /* LQDSTL_H_ */

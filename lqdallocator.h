@@ -9,14 +9,22 @@
 #define LQDALLOCATOR_H_
 #include"tools.h"
 #include<stdlib.h>
+struct addrnode {
+
+};
+template<class T1, class T2>
+void lqdconstruct(T1* ptr, const T2& t) {
+	new (ptr) T2(t);
+}
 class lqdallocator {
 public:
 	//directly get space
-	int allcat(int size, void** ptr) {
+	static void allocate(int size, void** ptr) {
 		*ptr = malloc(size);
-		if (!ptr)
-			return 0;
-		return 1;
+		//		if (!ptr)
+	}
+	static void deallocate(void* ptr) {
+		free(ptr);
 	}
 private:
 

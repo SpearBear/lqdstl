@@ -5,6 +5,7 @@
  *      Author: c
  */
 #include"lqdstl.h"
+#include<vector>
 int main() {
-	testallcator();
+	testconstruct();
 }

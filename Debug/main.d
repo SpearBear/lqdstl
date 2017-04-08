@@ -1,7 +1,10 @@
-main.d: ../main.cpp ../lqdstl.h ../lqdallocator.h ../tools.h
+main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h \
+ ../lqdvector.h
 
 ../lqdstl.h:
 
+../tools.h:
+
 ../lqdallocator.h:
 
-../tools.h:
+../lqdvector.h:
