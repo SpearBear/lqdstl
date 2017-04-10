@@ -1,4 +1,4 @@
-main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h \
+main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h ../locker.h \
  ../lqdvector.h
 
 ../lqdstl.h:
@@ -6,5 +6,7 @@ main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h \
 ../tools.h:
 
 ../lqdallocator.h:
+
+../locker.h:
 
 ../lqdvector.h:

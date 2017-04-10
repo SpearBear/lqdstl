@@ -7,5 +7,7 @@
 #include"lqdstl.h"
 #include<vector>
 int main() {
-	testconstruct();
+	//	testallocator();
+	pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+	locker l(lock);
 }
