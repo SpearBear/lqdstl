@@ -20,5 +20,28 @@ public:
 private:
 	pthread_mutex_t& lock;
 };
-
+class wrlocker {
+public:
+	wrlocker(pthread_rwlock_t& l) :
+		lock(l) {
+		pthread_rwlock_wrlock(&lock);
+	}
+	~wrlocker() {
+		pthread_rwlock_unlock(&lock);
+	}
+private:
+	pthread_rwlock_t& lock;
+};
+class rdlocker {
+public:
+	rdlocker(pthread_rwlock_t& l) :
+		lock(l) {
+		pthread_rwlock_rdlock(&lock);
+	}
+	~rdlocker() {
+		pthread_rwlock_unlock(&lock);
+	}
+private:
+	pthread_rwlock_t& lock;
+};
 #endif /* LOCKER_H_ */

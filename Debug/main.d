@@ -1,5 +1,5 @@
-main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h ../locker.h \
- ../lqdvector.h
+main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h ../traits.h \
+ ../locker.h ../lqdalgorithm.h ../lqdvector.h
 
 ../lqdstl.h:
 
@@ -7,6 +7,10 @@ main.d: ../main.cpp ../lqdstl.h ../tools.h ../lqdallocator.h ../locker.h \
 
 ../lqdallocator.h:
 
+../traits.h:
+
 ../locker.h:
+
+../lqdalgorithm.h:
 
 ../lqdvector.h:
