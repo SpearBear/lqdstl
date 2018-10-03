@@ -1,7 +1,1 @@
-ss
-abc
-<<<<<<< HEAD
-abccwww
-=======
-abccccccdex
-ddddddddd
+dex
