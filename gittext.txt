@@ -1,6 +1,1 @@
-ss
-abc
-<<<<<<< HEAD
-abccwww
-=======
-abccccccdex
+master
